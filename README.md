@@ -77,7 +77,3 @@ The slight confusion between `safe` and `suspicious` highlights the necessity of
 * Pradeep Behera
 * T Aadhithya
 * Rakesh Kumar S
-
-## Acknowledgements
-
-*(Add any acknowledgements here - e.g., "We thank our guide, Mr. Anandan, for his support.")*
