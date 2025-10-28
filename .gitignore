@@ -3,33 +3,95 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.so
 
-# Environment folders
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Environments
 .env
-.venv/
+.venv
 env/
 venv/
+ENV/
+env.bak/
+venv.bak/
 
 # IDE specific files
 .vscode/
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Datasets (if they are large and shouldn't be on GitHub)
+# Datasets (Keep commented unless prompts.csv becomes very large)
 # *.csv
-# prompts.csv # Uncomment if you decide not to commit the dataset
+# prompts.csv
 
-# Model files (Often too large for GitHub - use Git LFS or cloud storage if needed)
-# promptshield_model/*.bin
+# Model files (Ignoring large binary/tensor files)
+promptshield_model/*.bin
+promptshield_model/*.safetensors
 # *.onnx
 # *.pt
 # *.h5
 
-# Test outputs/screenshots (keep these separate)
+# Test outputs/screenshots
 screenshots/
 test_outputs/
 
 # Streamlit specific
 .streamlit/
+
+# Type annotation cache
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Output files
+output/
+results/*.png
+results/*.jpg
