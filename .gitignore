@@ -1,0 +1,35 @@
+# Python runtime files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment folders
+.env
+.venv/
+env/
+venv/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Datasets (if they are large and shouldn't be on GitHub)
+# *.csv
+# prompts.csv # Uncomment if you decide not to commit the dataset
+
+# Model files (Often too large for GitHub - use Git LFS or cloud storage if needed)
+# promptshield_model/*.bin
+# *.onnx
+# *.pt
+# *.h5
+
+# Test outputs/screenshots (keep these separate)
+screenshots/
+test_outputs/
+
+# Streamlit specific
+.streamlit/
