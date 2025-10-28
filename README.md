@@ -2,26 +2,6 @@
 
 PromptShield is a real-time, 4-class classification system using a fine-tuned DistilBERT model to secure technical Large Language Models (LLMs) against adversarial prompts. It categorizes incoming prompts into `safe`, `unsafe`, `suspicious`, or `jailbreak` classes, enabling a nuanced, tiered security response.
 
-## Project Structure
-
-PromptShield/
-│
-├─ promptshield_model/        # Trained DistilBERT model + tokenizer
-│   ├─ config.json
-│   ├─ pytorch_model.bin
-│   ├─ tokenizer.json
-│   ├─ vocab.txt
-│
-├─ app/                       # Your Streamlit app and helper scripts
-│   ├─ app.py                 # Main Streamlit script
-│   ├─ utils.py               # Optional: helper functions (e.g., Gemini API call, classification)
-│
-├─ prompts.csv                # Original dataset (optional, only for retraining or evaluation)
-├─ README.md                  # Project description / instructions
-└─ requirements.txt           # Python dependencies
-
-*(Note: The `promptshield_model` and `results` folders are present locally but their large contents like `.safetensors` and checkpoints are ignored by Git as configured in `.gitignore`)*
-
 ## Description
 
 Large Language Models (LLMs) are increasingly used as technical co-pilots for tasks like code generation and infrastructure management. However, standard binary safety filters (safe/unsafe) are often insufficient, failing to distinguish between benign developer queries and sophisticated adversarial attacks like reconnaissance (`suspicious`) or direct persona manipulation (`jailbreak`). PromptShield addresses this gap by providing a real-time middleware that classifies prompts into four distinct categories, enabling a more intelligent and granular security response (Allow, Warn, Block).
